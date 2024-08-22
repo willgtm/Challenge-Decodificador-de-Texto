@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Challenge ONE Decodificador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/alura_logo.png" alt="logo">
+    </header>
+    <main>
+        <!--Section Lado Esquerdo-->
+        <section class="parte1">
+        <!--Caixa de texto-->
+            <div class="text_area">
+                <textarea placeholder="Digite seu texto aqui" class="text_msg"></textarea>
+            </div>
+
+        <!--Parte do aviso-->
+            <div class="aviso">
+                <img src="assets/caution.svg">
+                <p class="aviso_texto">&#160 Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+        <!--Botões de Criptografar/Descriptografar-->
+            <div class="buttons">
+                <input type="button" class="encrypt_button" value="Criptografar">
+                <input type="button" class="decrypt_button" value="Descriptografar">
+            </div>
+        </section>
+        
+        <!----------------------------------------------------------------------------------------------------------------------->
+        
+        <!--Section Lado Direito-->
+        <section class="parte2">
+        <!--Div Desenho do boneco-->
+            <div class="boneco">
+                <img src="assets/hacker.gif">
+            </div>
+
+         <!--Div de nenhum texto descriptografado-->   
+            <div class="no_text">
+                <h3>Nenhuma mensagem <br> encontrada</h3>
+                <p>Digite um texto que você deseja <br> criptografar ou descriptografar</p>
+            </div>
+
+        <!--Botão de copiar texto-->
+            <div class="c_copiar">
+                <input type="button" class="copy_button" value="Copiar">
+            </div>
+
+        <!--Resultado-->
+            <div class="cresultado">
+                <p class="text_result"></p>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

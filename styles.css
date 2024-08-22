@@ -1,0 +1,191 @@
+/*Importar fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{ /*Variáveis das cores */
+    --cor_primaria: white;
+    --cor_secundaria: #0a3871;
+    --cor_terciaria: #D8DFE8;
+    --cor_background: #e5e5e5;
+}
+
+body{
+    background-color: var(--cor_background);
+}
+
+.logo{
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 100px;
+    height: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    width: 100%;
+    height: 90%
+}
+
+/*Parte Esquerda*/
+.text_area{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    padding-left: 100px;
+    width: 1000px;
+    height: 580px;
+}
+
+.text_msg{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: var(--cor_background);
+    color: var(--cor_secundaria);
+}
+
+.text_msg::placeholder{
+    color: var(--cor_secundaria)
+}
+
+.text_result{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.aviso{
+    top: 700px;
+    left: 370px;
+    display: flex;
+    color: #495057;
+    position: absolute;
+}
+
+.buttons{
+    top: 735px;
+    padding-left: 19%;
+    padding-top: 15px;
+    position: absolute;
+}
+
+.decrypt_button{
+    background: var(--cor_terciaria);
+    border: 1PX solid var(--cor_secundaria);
+    border-radius: 24px;
+    color: var(--cor_secundaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.encrypt_button{
+    background-color: rgba(247, 110, 4, 0.89);
+    border: 1PX solid #6d4303;
+    border-radius: 24px;
+    color: var(--cor_primaria);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*Parte Direita*/
+.parte2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 840px;
+    right: 200px;
+    padding-right: 20px;
+    background-color: var(--cor_primaria);
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.no_text{
+    position: absolute;
+    box-sizing: border-box;
+    top: 550px;
+    left: 70px;
+ }    
+
+ .no_text h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.no_text p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+
+.boneco{
+    position: absolute;
+    left: -4px;
+    top: 90px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 50px;
+    height: 29px;
+    transform: scale(0.8);
+}
+
+.cresultado{
+    bottom: 330px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 32px;
+    position: absolute;
+}
+
+.cresultado p{
+    color: #495057;
+    font-size: 25px;
+}
+
+.copy_button{
+    border: 1px solid var(--cor_secundaria);
+    border-radius: 24px;
+    color: var(--cor_secundaria);
+    cursor: pointer;
+    height: 67px;
+    position: absolute;
+    width: 336px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    top: 50px;
+    right: -325px;
+}
+
+.c_copiar{
+    display: flex;
+    bottom: 400px;
+    top: 700px;
+    padding-left: 40px;
+    position: absolute;
+}
+
+.ocultar{
+    display: none;
+}
